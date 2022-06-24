@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "description": "react-blog",
   "main": "index.js",
+  "engine": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js",
-    "backend":"nodemon index.js"
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js"
   },
   "author": "Seongkyeong",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "cookie-parser": "^1.4.6",
     "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
   }
 }
